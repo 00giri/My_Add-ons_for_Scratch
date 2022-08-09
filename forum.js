@@ -1,7 +1,7 @@
 //Add-ons for Discussion Forums
 
 //settings
-const SETTINGS = {'reply':true};
+const SETTINGS = {'reply':true, 'fastLink':true};
 
 let pathnames = location.pathname;
 pathnames = pathnames.split("/");
@@ -23,6 +23,27 @@ function reply() {
     });
 }
 
-if (SETTINGS.reply) {
-    reply()
+function fastLink() {
+    let elements = Array.from(document.getElementsByClassName('blockpost roweven firstpost'));
+    elements.forEach(elm => {
+        elm = elm.lastElementChild.firstElementChild;
+        let url = elm.lastElementChild.href;
+        elm = elm.firstElementChild;
+        let newElem = document.createElement('a');
+        newElem.href = "javascript:void(0)";
+        newElem.title = "fastLink: BBCodeを取得";
+        let num = elm.textContent;
+        newElem.innerHTML = num;
+        let BBCode = `[url=${url}]${num}[/url]`;
+        newElem.addEventListener("click", () =>{
+            alert(`その投稿へのBBCodeは\n${BBCode}\nです。`);
+        });
+        elm.innerHTML = "";
+        elm.prepend(newElem);
+    });
+}
+
+if (pathnames[2] == 'topic') {
+    if (SETTINGS.reply) reply();
+    if (SETTINGS.fastLink) fastLink();
 }

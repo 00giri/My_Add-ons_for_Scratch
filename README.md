@@ -3,7 +3,9 @@ Scratchで使える自作ブラウザ拡張機能です。気が向いたとき�
 **Scratchウェブサイト内では、安全性の観点からブラウザ拡張機能の紹介が禁じられています。ご注意ください。**
 
 ## 機能一覧
-- Forum-Reply: ディスカッションフォーラムでの返信機能です。各投稿の右下に"Reply"が表示されるので、それをクリックしてください。
+### フォーラム用拡張機能（forum.js）
+- Reply: ディスカッションフォーラムでの返信機能です。各投稿の右下に"Reply"が表示されるので、それをクリックしてください。
+- FastLink: 投稿番号（＃〇〇）をクリックすると、リンク付き投稿番号のBBCodeを表示します。
 
 ## 使い方
 - ダウンロードしてご利用ください。
@@ -11,7 +13,8 @@ Scratchで使える自作ブラウザ拡張機能です。気が向いたとき�
 - 各JavaScriptファイルのSettingsの値を変更することで、より細かく使用する機能を選択できます。※trueでON、falseでOFFになります。
 
 ## 更新情報
-2022/08/09 ver.1.0 Forum-Reply完成 ※[My_Eextension](https://github.com/Yukkku/My_Eextension)（[Yukkku](https://github.com/Yukkku)作）と大差ないため非公開
+2022/08/09 ver.1.1 Forum-FastLink実装 これより公開
+2022/08/09 ver.1.0 Forum-Reply実装 ※[My_Eextension](https://github.com/Yukkku/My_Eextension)（[Yukkku](https://github.com/Yukkku)作）と大差ないため非公開
 
 ## クレジット
 - この拡張機能を作成するにあたって、特に[「JavaScript入門 | Let'sプログラミング」](https://www.javadrive.jp/javascript/)を参考にしました。
