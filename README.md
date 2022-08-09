@@ -13,8 +13,8 @@ Scratchで使える自作ブラウザ拡張機能です。気が向いたとき�
 - 各JavaScriptファイルのSettingsの値を変更することで、より細かく使用する機能を選択できます。※trueでON、falseでOFFになります。
 
 ## 更新情報
-2022/08/09 ver.1.1 Forum-FastLink実装 これより公開  
-2022/08/09 ver.1.0 Forum-Reply実装 ※[My_Eextension](https://github.com/Yukkku/My_Eextension)（[Yukkku](https://github.com/Yukkku)作）と大差ないため非公開
+2022/08/09 ver.1.1 Forum-FastLink実装 ※これより公開  
+2022/08/09 ver.1.0 Forum-Reply実装 ※非公開のバージョン
 
 ## クレジット
 - この拡張機能を作成するにあたって、特に[「JavaScript入門 | Let'sプログラミング」](https://www.javadrive.jp/javascript/)を参考にしました。
