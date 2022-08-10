@@ -16,7 +16,7 @@ Scratchで使える自作ブラウザ拡張機能です。気が向いたとき�
 - 各JavaScriptファイルのSETTINGSの値を変更することで、より細かく使用する機能を選択できます。※trueでON、falseでOFFになります。
 
 ## 更新情報
-2022/08/10 ver.1.2 Pages-AddDiscuss実装
+2022/08/10 ver.1.2 Pages-AddDiscuss実装  
 2022/08/09 ver.1.1 Forum-FastLink実装 ※これより公開  
 2022/08/09 ver.1.0 Forum-Reply実装 ※非公開のバージョン
 
