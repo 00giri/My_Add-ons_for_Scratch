@@ -2,15 +2,13 @@
 
     "manifest_version": 2,
     "name": "My_Add-ons_for_Scratch",
-    "version": "1.1",
+    "version": "1.2",
   
-    "description": "Scratchで使える拡張機能です。フォーラムに返信機能を追加します。",
+    "description": "Scratchで使える00giri作のブラウザ拡張機能です。",
   
     "content_scripts": [
-      {
-        "matches": ["*://scratch.mit.edu/discuss/*"],
-        "js": ["forum.js"]
-      }
+      {"matches": ["*://scratch.mit.edu/discuss/*"], "js": ["forum.js"]},
+      {"matches": ["*://scratch.mit.edu/*"], "js": ["pages.js"]}
     ]
   
   }
