@@ -1,7 +1,7 @@
 //Add-ons for Discussion Forums
 
 //settings
-const SETTINGS = {'reply':true, 'fastLink':true};
+const SETTINGS = {'reply':true, 'fastLink':true, 'findPage':true};
 
 let pathnames = location.pathname;
 pathnames = pathnames.split("/");
@@ -43,7 +43,28 @@ function fastLink() {
     });
 }
 
+function findPage() {
+    let elements = Array.from(document.getElementsByClassName('pagination'));
+    elements.forEach(elm => {
+        let newElem = document.createElement('a');
+        newElem.href = "javascript:void(0)";
+        newElem.title = "FindPage: 投稿番号から投稿を探す";
+        newElem.innerHTML = 'FindPage';
+        newElem.addEventListener("click", () =>{
+            let val = window.prompt('投稿番号を入力してください。');
+            val = val.split('#').pop();
+            if (val){
+                val = Math.ceil(val/20.0);
+                let url = `https://scratch.mit.edu/discuss/topic/${pathnames[3]}/?page=${val}`;
+                window.open(url);
+            }
+        });
+        elm.prepend(newElem);
+    });
+}
+
 if (pathnames[2] == 'topic') {
     if (SETTINGS.reply) reply();
     if (SETTINGS.fastLink) fastLink();
+    if (SETTINGS.findPage) findPage();
 }
